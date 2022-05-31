@@ -1,7 +1,7 @@
 name: Update overlay using Superflore
 on:
-  schedule:
-    - cron: "0 12 * * FRI"
+  # schedule:
+  #   - cron: "0 12 * * FRI"
   workflow_dispatch:
 jobs:
   build:
@@ -41,5 +41,4 @@ jobs:
             --tar-archive-dir "${{ runner.temp }}/tar" \
             --output-repository-path . \
             --upstream-branch staging \
-            --ros-distro foxy
-            --only bson
+            --ros-distro galactic
