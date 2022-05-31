@@ -7,47 +7,47 @@ self: super: with self.lib; let
     packageOverrides = composeExtensions packageOverrides (pySelf: pySuper: {
       bson = pySelf.callPackage ./bson { };
 
-      # catkin-pkg = pySelf.callPackage ./catkin-pkg { };
+      catkin-pkg = pySelf.callPackage ./catkin-pkg { };
 
-      # catkin-tools = pySelf.callPackage ./catkin-tools { };
+      catkin-tools = pySelf.callPackage ./catkin-tools { };
 
-      # colcon-cmake = pySelf.callPackage ./colcon/cmake.nix { };
+      colcon-cmake = pySelf.callPackage ./colcon/cmake.nix { };
 
-      # colcon-core = pySelf.callPackage ./colcon/core.nix { };
+      colcon-core = pySelf.callPackage ./colcon/core.nix { };
 
-      # colcon-library-path = pySelf.callPackage ./colcon/library-path.nix { };
+      colcon-library-path = pySelf.callPackage ./colcon/library-path.nix { };
 
-      # colcon-metadata = pySelf.callPackage ./colcon/metadata.nix { };
+      colcon-metadata = pySelf.callPackage ./colcon/metadata.nix { };
 
-      # colcon-notification = pySelf.callPackage ./colcon/notification.nix { };
+      colcon-notification = pySelf.callPackage ./colcon/notification.nix { };
 
-      # colcon-output = pySelf.callPackage ./colcon/output.nix { };
+      colcon-output = pySelf.callPackage ./colcon/output.nix { };
 
-      # colcon-package-selection = pySelf.callPackage ./colcon/package-selection.nix { };
+      colcon-package-selection = pySelf.callPackage ./colcon/package-selection.nix { };
 
-      # colcon-parallel-executor = pySelf.callPackage ./colcon/parallel-executor.nix { };
+      colcon-parallel-executor = pySelf.callPackage ./colcon/parallel-executor.nix { };
 
-      # colcon-pkg-config = pySelf.callPackage ./colcon/pkg-config.nix { };
+      colcon-pkg-config = pySelf.callPackage ./colcon/pkg-config.nix { };
 
-      # colcon-python-setup-py = pySelf.callPackage ./colcon/python-setup-py.nix { };
+      colcon-python-setup-py = pySelf.callPackage ./colcon/python-setup-py.nix { };
 
-      # colcon-recursive-crawl = pySelf.callPackage ./colcon/recursive-crawl.nix { };
+      colcon-recursive-crawl = pySelf.callPackage ./colcon/recursive-crawl.nix { };
 
-      # colcon-ros = pySelf.callPackage ./colcon/ros.nix { };
+      colcon-ros = pySelf.callPackage ./colcon/ros.nix { };
 
-      # colcon-test-result = pySelf.callPackage ./colcon/test-result.nix { };
+      colcon-test-result = pySelf.callPackage ./colcon/test-result.nix { };
 
-      # empy = pySelf.callPackage ./empy { };
+      empy = pySelf.callPackage ./empy { };
 
-      # osrf-pycommon = pySelf.callPackage ./osrf-pycommon {};
+      osrf-pycommon = pySelf.callPackage ./osrf-pycommon {};
 
-      # rosdep = pySelf.callPackage ./rosdep { };
+      rosdep = pySelf.callPackage ./rosdep { };
 
-      # rosdistro = pySelf.callPackage ./rosdistro { };
+      rosdistro = pySelf.callPackage ./rosdistro { };
 
-      # rosinstall-generator = pySelf.callPackage ./rosinstall-generator { };
+      rosinstall-generator = pySelf.callPackage ./rosinstall-generator { };
 
-      # rospkg = pySelf.callPackage ./rospkg { };
+      rospkg = pySelf.callPackage ./rospkg { };
     });
   }));
 
