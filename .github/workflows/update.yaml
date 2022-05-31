@@ -41,4 +41,5 @@ jobs:
             --tar-archive-dir "${{ runner.temp }}/tar" \
             --output-repository-path . \
             --upstream-branch staging \
+            --ros-distro foxy
             --only bson
