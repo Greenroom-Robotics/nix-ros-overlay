@@ -8,14 +8,14 @@ jobs:
     strategy:
       matrix:
         distro:
-          - melodic
-          - melodicPython3
-          - noetic
-          - foxy
+          # - melodic
+          # - melodicPython3
+          # - noetic
+          # - foxy
           - galactic
         system:
           - x86_64-linux
-          - aarch64-linux
+          # - aarch64-linux
     steps:
     - uses: actions/checkout@v2
     - uses: cachix/install-nix-action@v13
